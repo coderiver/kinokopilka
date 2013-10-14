@@ -1,0 +1,304 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>	
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .header -->
+<div class="header">
+	<div class="container">
+		<div class="page-header">
+		  <a href="#" class="logo">Kinokopilka</a>
+		  <div class="input-group input-group-sm search">
+        <input type="text" class="form-control" placeholder="Поиск">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><i></i></button>
+        </span>
+      </div>
+      <div class="search-load" style="display: none">
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Фильмы</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Хоббит: Нежданное путешествие <span>(2012)</span></a></li>
+	          <li><a href="#">Мистер и миссис Смит <span>(2012)</span></a></li>
+	          <li><a href="#">Сказка об Иване, пане и злыднях <span>(2012)</span></a></li>
+	          <li><a href="#">26 грабителей <span>(2012)</span></a></li>
+	        </ul>
+      	</div>  
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Актеры</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Анджелина Джоли</a></li>
+	          <li><a href="#">Керри Вашингтон</a></li>
+	        </ul>
+      	</div>
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Плейлисты</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Фильмы на одном дыхании...)</a></li>
+	          <li><a href="#">Блокбастер plus</a></li>
+	        </ul>
+      	</div>    	
+      </div>
+      <div class="social">
+      	<a class="social__fb" href="#"></a>
+      	<a class="social__tw" href="#"></a>
+      	<a class="social__vk" href="#"></a>
+      </div>
+      <div class="heade__links">
+      	<a href="#">Вход</a>
+      	<a href="#">Регистрация</a>
+      </div>
+		</div>
+	</div>
+</div>
+<!-- END .header -->
+<!-- BEGIN .nav -->
+<nav class="nav-wrap">
+	<div class="container">
+		<ul class="nav navbar-nav">
+	    <li class="active"><a href="#">Фильмы</a></li>
+	    <li><a href="#">Сериалы</a></li>
+	    <li><a href="#">Персоны</a></li>
+	    <li><a href="#">Плейлисты</a></li>
+	    <li><a href="#">Рецензии</a></li>
+	    <li><a href="#">Форумы</a></li>
+	  </ul>
+	</div>
+</nav>
+<!-- END .nav -->
+<!-- BEGIN .filter -->
+<div class="filter js-filter">
+	<div class="container">
+		<div class="filter__head">
+			<!-- Single button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+			    Любое качетво <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+			<!-- Single button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+			    Любой перевод <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+			<!-- Single button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+			    Все страны <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+			<!-- Single button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+			    Любой год <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+			<div class="btn-group filter__btn-all">
+			  <button type="button" class="btn btn-sm btn-default js-filter-btn">Все фильтры</button>
+			</div>
+		</div>
+		<div class="filter__all js-filter-all">
+			<div class="filter__types">
+				<label><input type="checkbox">Есть онлайн</label>
+				<label><input type="checkbox">Torrent</label>
+				<label><input type="checkbox" checked>Только с наградами</label>
+				<label><input type="checkbox">Только с рекоммендациями</label>
+				<label><input type="checkbox">С любимыми актерами</label>
+				<label><input type="checkbox">Друзья проголосовали</label>
+			</div>
+			<div class="filter__category">
+				<div class="filter__title">Категории</div>
+				<div class="filter__in">
+					<a href="#">Аниме</a>
+					<a href="#">Артхаус</a>
+					<a href="#">Боевик</a>
+					<a href="#">Вестерн</a>
+					<a href="#">Детектив</a>
+					<a href="#">Документальный</a>
+					<a href="#">Драма</a>
+					<a href="#">Исторический</a>
+					<a href="#">Комедия</a>
+					<a href="#">Комикс</a>
+					<a class="is-active" href="#">Криминал</a>
+					<a href="#">Мелодрама</a>
+					<a href="#">Мистика</a>
+					<a href="#">Музыка</a>
+					<a href="#">Мультфильм</a>
+					<a href="#">Немое кино</a>
+					<a href="#">Обучающие</a>
+					<a href="#">Пародия</a>
+					<a href="#">Приключения</a>
+					<a href="#">Спорт</a>
+					<a href="#">ТВ шоу</a>
+					<a class="is-active" href="#">Триллер</a>
+					<a href="#">Ужасы</a>
+					<a href="#">Фантастика</a>
+					<a href="#">Фентези</a>
+				</div>								                          
+			</div>
+			<div class="filter__tags">
+				<div class="filter__title">Тэги</div>
+				<div class="filter__in">
+					<a href="#">Аниме</a>
+					<a href="#">Артхаус</a>
+					<a href="#">Боевик</a>
+					<a href="#">Вестерн</a>
+					<a href="#">Детектив</a>
+					<a href="#">Документальный</a>
+					<a href="#">Драма</a>
+					<a href="#">Исторический</a>
+					<a href="#">Комедия</a>
+					<a href="#">Комикс</a>
+					<a class="is-active" href="#">Криминал</a>
+					<a href="#">Мелодрама</a>
+					<a href="#">Мистика</a>
+					<a href="#">Музыка</a>
+					<a href="#">Мультфильм</a>
+					<a href="#">Немое кино</a>
+					<a href="#">Обучающие</a>
+					<a href="#">Пародия</a>
+					<a href="#">Приключения</a>
+					<a href="#">Спорт</a>
+					<a href="#">ТВ шоу</a>
+					<a class="is-active" href="#">Триллер</a>
+					<a href="#">Ужасы</a>
+					<a href="#">Фантастика</a>
+					<a href="#">Фентези</a>
+				</div>								                          
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .filter -->
+<!-- BEGIN .container -->
+<div class="container">
+	<div class="row row_comm">
+		<div class="col-md-9">
+			<!-- BEGIN .comm -->
+			<div class="comm">
+				<div class="comm__title">Рецензии</div>
+				<div class="comm__item">
+					<div class="comm__pic">
+						<a href="#"><img src="img/user.jpg" alt=""></a>
+					</div>
+					<div class="comm__in">
+						<div class="comm__title">Фильм, меняющий реальность</div>
+						<div class="comm__critique">
+							<ul class="comm__rating">
+								<li>8.2</li>
+								<li><a href="#">14 согласны</a></li>
+								<li><a class="is-red" href="#">4 не согласны</a></li>
+							</ul>
+							<div class="comm__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, doloremque, nostrum, est, magni qui ab obcaecati unde omnis harum earum deleniti aliquid optio sunt hic laboriosam quo commodi suscipit aperiam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, odio explicabo atque ullam veniam rem voluptatibus in unde tempore nostrum praesentium consequuntur ex sed blanditiis expedita dignissimos incidunt obcaecati magnam!</p>
+							</div>
+							<div class="comm__detail">
+								<a class="comm__user" href="#">olissol</a>
+								<div class="comm__date">2 дня назад</div>
+								<a class="comm__count" href="#">14 комментариев</a>
+							</div>							
+						</div>						
+					</div>
+				</div>
+			</div>
+			<!-- END .comm -->
+		</div>
+		<div class="col-md-3">
+			<!-- BEGIN .comm -->
+			<div class="comm">
+				<div class="comm__create">
+					<div class="btn-group">
+					  <button type="button" class="btn btn-sm btn-info">Написать рецензию</button>
+					</div>
+					<ul class="comm__create-list">
+						<li>Средний бал фильма по рецензиям: 6.8</li>
+						<li><a href="#">15 рецензий</a></li>
+						<li><a href="#">1 рецензия друга</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END .comm -->
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-9">
+			<!-- BEGIN .comm -->
+			<div class="comm">
+				<div class="comm__title">Комментарии</div>
+				<div class="comm__list">
+					<div class="comm__form">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__area">
+							<textarea class="form-control" rows="2" placeholder="Ваш комменатрий"></textarea>
+						</div>
+					</div>
+					<div class="comm__item">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__detail">
+							<a class="comm__user" href="#">olissol</a>
+							<div class="comm__date">2 дня назад</div>
+							<div class="comm__stats">+47</div>
+							<div class="comm__vote">
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_plus"></i></button>
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_minus"></i></button>
+							</div>							
+						</div>
+						<div class="comm__text">
+							<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+						</div>
+						<div class="comm__foot">
+							<button class="btn btn-link">Ответить</button>
+							<div class="comm__complaint">
+								<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- END .comm -->
+		</div>
+	</div>
+</div>
+<!-- END .container -->
+</body>
+</html>
