@@ -1,0 +1,555 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>	
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .header -->
+<div class="header">
+	<div class="container">
+		<div class="page-header">
+		  <a href="#" class="logo">Kinokopilka</a>
+		  <div class="input-group input-group-sm search">
+        <input type="text" class="form-control" placeholder="Поиск">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><i></i></button>
+        </span>
+      </div>
+      <div class="search-load" style="display: none">
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Фильмы</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Хоббит: Нежданное путешествие <span>(2012)</span></a></li>
+	          <li><a href="#">Мистер и миссис Смит <span>(2012)</span></a></li>
+	          <li><a href="#">Сказка об Иване, пане и злыднях <span>(2012)</span></a></li>
+	          <li><a href="#">26 грабителей <span>(2012)</span></a></li>
+	        </ul>
+      	</div>  
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Актеры</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Анджелина Джоли</a></li>
+	          <li><a href="#">Керри Вашингтон</a></li>
+	        </ul>
+      	</div>
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Плейлисты</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Фильмы на одном дыхании...)</a></li>
+	          <li><a href="#">Блокбастер plus</a></li>
+	        </ul>
+      	</div>    	
+      </div>
+      <div class="social">
+      	<a class="social__fb" href="#"></a>
+      	<a class="social__tw" href="#"></a>
+      	<a class="social__vk" href="#"></a>
+      </div>
+      <div class="heade__links">
+      	<a href="#">Вход</a>
+      	<a href="#">Регистрация</a>
+      </div>
+		</div>
+	</div>
+</div>
+<!-- END .header -->
+<!-- BEGIN .nav -->
+<nav class="nav-wrap">
+	<div class="container">
+		<ul class="nav navbar-nav">
+	    <li class="active"><a href="#">Фильмы</a></li>
+	    <li><a href="#">Сериалы</a></li>
+	    <li><a href="#">Персоны</a></li>
+	    <li><a href="#">Плейлисты</a></li>
+	    <li><a href="#">Рецензии</a></li>
+	    <li><a href="#">Форумы</a></li>
+	  </ul>
+	</div>
+</nav>
+<!-- END .nav -->
+<!-- BEGIN .movie -->
+<div class="movie" style="background-image: url(img/movie.jpg); background-color: #009966">
+	<!-- BEGIN .container -->
+	<div class="container">
+		<button type="button" class="btn btn-xs btn-black">Сменить обложку</button>
+	</div>
+	<!-- END .container -->
+</div>
+<!-- END .movie -->
+<!-- BEGIN .container -->
+<div class="container">
+	<div class="detail detail_mod">
+		<div class="detail__left">
+			<div class="detail__pic">
+				<img src="img/detail.jpg" alt="">
+			</div>			
+			<div class="detail__trailers">
+				<button type="button" class="btn btn-default btn-sm">Трейлер 1</utton>
+				<button type="button" class="btn btn-default btn-sm">Трейлер 2</utton>
+			</div>				
+		</div>
+		<div class="detail__right">
+			<div class="detail__info">
+				<div class="detail__actions">
+					<div class="detail__btns">
+						<button type="button" class="btn btn-lg btn-success" data-original-title="" title="">Смотреть</button>
+						<button type="button" class="btn btn-lg btn-warning" data-original-title="" title="">Скачать</button>
+					</div>
+					<div class="list-group">
+            <a href="#" class="list-group-item">Добавить в фавориты</a>
+            <a href="#" class="list-group-item active">Посмотреть позже</a>
+            <a href="#" class="list-group-item">Добавить в плейлист</a>
+            <a href="#" class="list-group-item">Рекомендовать</a>
+            <div class="list-group-item">            	
+            	<div class="checkbox">
+				        <label>
+				          <input type="checkbox"> Уже смотрел
+				        </label>
+				      </div>
+							<div class="btn-group">
+				        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><i class="ico ico_setting"></i> <span class="caret"></span></button>
+				        <ul class="dropdown-menu" role="menu">
+				          <li><a href="#">Action</a></li>
+				          <li><a href="#">Another action</a></li>
+				          <li><a href="#">Something else here</a></li>
+				          <li class="divider"></li>
+				          <li><a href="#">Separated link</a></li>
+				        </ul>
+				      </div>
+            </div>
+          </div>		
+          <!-- BEGIN .share -->
+          <div class="share">
+          	<div class="share__item">
+          		<span>25</span>
+          		<button class="share__tw">Tweet</button>
+          	</div>
+          	<div class="share__item">
+          		<span>1.3K</span>
+          		<button class="share__fb">Like</button>
+          	</div>
+          	<div class="share__item">
+          		<span>298</span>
+          		<button class="share__gp">+1</button>
+          	</div>
+          </div>
+          <!-- END .share -->			
+				</div>
+				<div class="detail__info-in">
+					<div class="detail__title">
+						<a href="#">Хоббит: Нежданное путешествие</a>
+					</div>
+					<div class="detail__slogan">The Hobbit: An Unexpected Journey</div>
+				</div>
+				<ul class="detail__param">
+					<li>
+						<div class="detail__rating">
+							<div class="detail__rating-in">
+								<img src="img/star-a.png" alt="">
+								<img src="img/star-a.png" alt="">
+								<img src="img/star-a.png" alt="">
+								<img src="img/star-a.png" alt="">
+								<img src="img/star-a.png" alt="">
+								<img src="img/star-a.png" alt="">
+								<img src="img/star-a.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<span>7/10 (2526)</span>
+							</div>
+							<div class="imdb"><span>IMDb</span>7/10</div>	
+						</div>
+						<div class="detail__stats">							
+							<ul class="detail__award">
+								<li><i></i></li>
+								<li><span>14</span></li>
+							</ul>
+							<ul class="detail__recomm js-tooltip" data-toggle="tooltip" data-placement="top" data-original-title="6 рекомендаций">
+								<li><i></i></li>
+								<li><span>6</span></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong>Жанр</strong>
+						<span><a href="#">Драма</a>, <a href="#">Фантастика</a>, <a href="#">Триллер</a></span>
+					</li>
+					<li>
+						<strong>Дата выпуска</strong>
+						<span>08.07.2010</span>
+					</li>
+					<li>
+						<strong>Страна</strong>
+						<span><a href="#">Великобритания</a>, <a href="#">США</a></span>
+					</li>
+					<li>
+						<strong>Теги</strong>
+						<span><a href="#">Боевик</a>, <a href="#">Детектив</a>, <a href="#">Драма</a>, <a href="#">Фантастика</a>, <a href="#">Триллер</a></span>
+					</li>
+				</ul>
+				<div class="detail__desc">
+					<div class="detail__desc-title">Описание</div>
+					<div class="detail__text">
+						<p>На планете Бааб, в самом центре Вселенной, два брата делают всё возможное, чтобы защитить свою галактику. Они — полные противоположности. Если девиз Гарри — «сначала подумай, потом сделай», то отважный Скорч живет по закону «сила есть — ума не надо», что не мешает им слаженно работать. Но однажды они получают сигнал S.O.S. с опасной планеты…под названием Земля. Скорч, сломя голову, бросается на помощь, и, разумеется, влипает в неприятности. Только Гарри может вытащить его из «Зоны 51». Братья откроют множество головокружительных тайн, но смогут ли они сбежать с самой опасной планеты во Вселенной?</p>
+					</div>
+					<div class="detail__author">Добавил <a href="#">A/IxuMuK</a> 8 Июня 2010</div>
+				</div>
+			</div>				
+		</div>
+	</div>
+</div>
+<!-- END .container -->
+<!-- BEGIN .container -->
+<div class="container">	
+	<!-- BEGIN .cast -->
+	<div class="cast">	
+		<div class="title">Состав исполнителей</div>
+		<div class="cast__item cast__item_mod">
+			<div class="cast__title">Режиссер</div>
+			<div class="cast__man">
+				<a href="#"><img src="img/man.jpg" alt=""></a>
+				<a href="#">Френсис Лоуренс</a>
+			</div>
+		</div>
+		<div class="cast__item">
+			<div class="cast__title">Актеры</div>
+			<div class="cast__man">
+				<a href="#"><img src="img/man.jpg" alt=""></a>
+				<a href="#">Френсис Лоуренс</a>
+			</div>
+			<div class="cast__man">
+				<a href="#"><img src="img/man.jpg" alt=""></a>
+				<a href="#">Френсис Лоуренс</a>
+			</div>
+			<div class="cast__man">
+				<a href="#"><img src="img/man.jpg" alt=""></a>
+				<a href="#">Френсис Лоуренс</a>
+			</div>
+			<div class="cast__man">
+				<a href="#"><img src="img/man.jpg" alt=""></a>
+				<a href="#">Френсис Лоуренс</a>
+			</div>
+			<div class="cast__man">
+				<a href="#"><img src="img/man.jpg" alt=""></a>
+				<a href="#">Френсис Лоуренс</a>
+			</div>
+			<div class="cast__man">
+				<a href="#"><img src="img/man.jpg" alt=""></a>
+				<a href="#">Салли Ричардсон</a>
+			</div>
+		</div>
+		<div class="cast__item">
+			<div class="cast__title">А также:</div>
+			<ul class="cast__list">
+				<li><a href="#">Даррел Фостер</a></li>
+				<li><a href="#">Джоанна Нумата</a></li>
+				<li><a href="#">Эбби, Кона</a></li>
+				<li><a href="#">Сэмюэл Глен</a></li>
+				<li><a href="#">Джеймс Майкл МакКоли</a></li>
+				<li><a href="#">Марин Айрлэнд</a></li>
+			</ul>
+		</div>
+	</div>	
+	<!-- END .cast -->
+</div>
+<!-- END .container -->
+<!-- BEGIN .container -->
+<div class="container">
+	<div class="title">Кадры из фильма</div>
+	<div class="frames">
+		<a href="#"><img src="img/frame.jpg" alt=""></a>
+		<a href="#"><img src="img/frame1.jpg" alt=""></a>
+		<a href="#"><img src="img/frame.jpg" alt=""></a>
+		<a href="#"><img src="img/frame1.jpg" alt=""></a>
+		<a href="#"><img src="img/frame.jpg" alt=""></a>
+		<a href="#"><img src="img/frame1.jpg" alt=""></a>
+		<a href="#"><img src="img/frame.jpg" alt=""></a>
+		<a href="#"><img src="img/frame1.jpg" alt=""></a>
+		<a href="#"><img src="img/frame.jpg" alt=""></a>
+		<a href="#"><img src="img/frame1.jpg" alt=""></a>
+	</div>
+</div>
+<!-- END .container -->
+<!-- BEGIN .recomm -->
+<div class="recomm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="title">Рекомендации фильма</div>
+				<div class="recomm__user">
+					<div class="recomm__user-item">
+						<div class="recomm__user-pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="recomm__user-rating">7/10</div>
+						<div class="recomm__user-info">
+							<div class="recomm__user-who">
+								<a href="#">dragon&leo</a>
+							</div>							
+							<p>Народ мульт просто супер советую всем посмотреть!)</p>
+							<a href="#">Ответить</a>
+						</div>
+					</div>
+					<div class="recomm__user-item">
+						<div class="recomm__user-pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="recomm__user-rating">7/10</div>
+						<div class="recomm__user-info">
+							<div class="recomm__user-who">
+								<a href="#">dragon&leo</a>
+							</div>							
+							<p>Народ мульт просто супер советую всем посмотреть!)</p>
+							<a href="#">Ответить</a>
+						</div>
+					</div>
+					<a href="#">Все рекомендации</a>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<ul id="myTab" class="nav nav-tabs">
+	        <li class="active"><a href="#tab1" data-toggle="tab">Вам еще рекомендуют</a></li>
+	        <li class=""><a href="#tab2" data-toggle="tab">Похожие фильмы</a></li>
+	      </ul>
+	      <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active in" id="tab1">
+            <div class="row">
+            	<div class="col-md-3">
+            		<!-- BEGIN .item -->
+            		<div class="item">
+      						<div class="item__info">
+      							<div class="item__video"><i></i></div>
+      							<div class="item__pic">
+      								<img src="img/item.jpg" alt="">
+      							</div>
+      							<div class="item__up">
+      								<div class="item__title">
+      									<a href="#">The Hobbit: An Unexpected Journey</a>
+      								</div>
+      								<div class="imdb"><span>IMDb</span>7/10</div>
+      								<div class="kinopoisk"><span>КиноПоиск</span>8.7</div>
+      								<div class="item__actions">
+      									<button class="item__star is-active"><i></i></button>
+      									<button class="item__time"><i></i></button>
+      									<button class="item__check"><i></i></button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="item__detail">
+      							<a href="#">Мартышки в космосе: Ответный удар 3D</a>
+      						</div>
+      					</div>
+            		<!-- END .item -->
+            	</div>
+            	<div class="col-md-3">
+            		<!-- BEGIN .item -->
+            		<div class="item">
+      						<div class="item__info">
+      							<div class="item__video"><i></i></div>
+      							<div class="item__pic">
+      								<img src="img/item.jpg" alt="">
+      							</div>
+      							<div class="item__up">
+      								<div class="item__title">
+      									<a href="#">The Hobbit: An Unexpected Journey</a>
+      								</div>
+      								<div class="imdb"><span>IMDb</span>7/10</div>
+      								<div class="kinopoisk"><span>КиноПоиск</span>8.7</div>
+      								<div class="item__actions">
+      									<button class="item__star is-active"><i></i></button>
+      									<button class="item__time"><i></i></button>
+      									<button class="item__check"><i></i></button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="item__detail">
+      							<a href="#">Мартышки в космосе: Ответный удар 3D</a>
+      						</div>
+      					</div>
+            		<!-- END .item -->
+            	</div>
+            	<div class="col-md-3">
+            		<!-- BEGIN .item -->
+            		<div class="item">
+      						<div class="item__info">
+      							<div class="item__video"><i></i></div>
+      							<div class="item__pic">
+      								<img src="img/item.jpg" alt="">
+      							</div>
+      							<div class="item__up">
+      								<div class="item__title">
+      									<a href="#">The Hobbit: An Unexpected Journey</a>
+      								</div>
+      								<div class="imdb"><span>IMDb</span>7/10</div>
+      								<div class="kinopoisk"><span>КиноПоиск</span>8.7</div>
+      								<div class="item__actions">
+      									<button class="item__star is-active"><i></i></button>
+      									<button class="item__time"><i></i></button>
+      									<button class="item__check"><i></i></button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="item__detail">
+      							<a href="#">Мартышки в космосе: Ответный удар 3D</a>
+      						</div>
+      					</div>
+            		<!-- END .item -->
+            	</div>
+            	<div class="col-md-3">
+            		<!-- BEGIN .item -->
+            		<div class="item">
+      						<div class="item__info">
+      							<div class="item__video"><i></i></div>
+      							<div class="item__pic">
+      								<img src="img/item.jpg" alt="">
+      							</div>
+      							<div class="item__up">
+      								<div class="item__title">
+      									<a href="#">The Hobbit: An Unexpected Journey</a>
+      								</div>
+      								<div class="imdb"><span>IMDb</span>7/10</div>
+      								<div class="kinopoisk"><span>КиноПоиск</span>8.7</div>
+      								<div class="item__actions">
+      									<button class="item__star is-active"><i></i></button>
+      									<button class="item__time"><i></i></button>
+      									<button class="item__check"><i></i></button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="item__detail">
+      							<a href="#">Мартышки в космосе: Ответный удар 3D</a>
+      						</div>
+      					</div>
+            		<!-- END .item -->
+            	</div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab2">
+            <div class="row">
+            	<div class="col-md-3">
+            		<!-- BEGIN .item -->
+            		<div class="item">
+      						<div class="item__info">
+      							<div class="item__video"><i></i></div>
+      							<div class="item__pic">
+      								<img src="img/item.jpg" alt="">
+      							</div>
+      							<div class="item__up">
+      								<div class="item__title">
+      									<a href="#">The Hobbit: An Unexpected Journey</a>
+      								</div>
+      								<div class="imdb"><span>IMDb</span>7/10</div>
+      								<div class="kinopoisk"><span>КиноПоиск</span>8.7</div>
+      								<div class="item__actions">
+      									<button class="item__star is-active"><i></i></button>
+      									<button class="item__time"><i></i></button>
+      									<button class="item__check"><i></i></button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="item__detail">
+      							<a href="#">Мартышки в космосе: Ответный удар 3D</a>
+      						</div>
+      					</div>
+            		<!-- END .item -->
+            	</div>
+            	<div class="col-md-3">
+            		<!-- BEGIN .item -->
+            		<div class="item">
+      						<div class="item__info">
+      							<div class="item__video"><i></i></div>
+      							<div class="item__pic">
+      								<img src="img/item.jpg" alt="">
+      							</div>
+      							<div class="item__up">
+      								<div class="item__title">
+      									<a href="#">The Hobbit: An Unexpected Journey</a>
+      								</div>
+      								<div class="imdb"><span>IMDb</span>7/10</div>
+      								<div class="kinopoisk"><span>КиноПоиск</span>8.7</div>
+      								<div class="item__actions">
+      									<button class="item__star is-active"><i></i></button>
+      									<button class="item__time"><i></i></button>
+      									<button class="item__check"><i></i></button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="item__detail">
+      							<a href="#">Мартышки в космосе: Ответный удар 3D</a>
+      						</div>
+      					</div>
+            		<!-- END .item -->
+            	</div>
+            	<div class="col-md-3">
+            		<!-- BEGIN .item -->
+            		<div class="item">
+      						<div class="item__info">
+      							<div class="item__video"><i></i></div>
+      							<div class="item__pic">
+      								<img src="img/item.jpg" alt="">
+      							</div>
+      							<div class="item__up">
+      								<div class="item__title">
+      									<a href="#">The Hobbit: An Unexpected Journey</a>
+      								</div>
+      								<div class="imdb"><span>IMDb</span>7/10</div>
+      								<div class="kinopoisk"><span>КиноПоиск</span>8.7</div>
+      								<div class="item__actions">
+      									<button class="item__star is-active"><i></i></button>
+      									<button class="item__time"><i></i></button>
+      									<button class="item__check"><i></i></button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="item__detail">
+      							<a href="#">Мартышки в космосе: Ответный удар 3D</a>
+      						</div>
+      					</div>
+            		<!-- END .item -->
+            	</div>
+            	<div class="col-md-3">
+            		<!-- BEGIN .item -->
+            		<div class="item">
+      						<div class="item__info">
+      							<div class="item__video"><i></i></div>
+      							<div class="item__pic">
+      								<img src="img/item.jpg" alt="">
+      							</div>
+      							<div class="item__up">
+      								<div class="item__title">
+      									<a href="#">The Hobbit: An Unexpected Journey</a>
+      								</div>
+      								<div class="imdb"><span>IMDb</span>7/10</div>
+      								<div class="kinopoisk"><span>КиноПоиск</span>8.7</div>
+      								<div class="item__actions">
+      									<button class="item__star is-active"><i></i></button>
+      									<button class="item__time"><i></i></button>
+      									<button class="item__check"><i></i></button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="item__detail">
+      							<a href="#">Мартышки в космосе: Ответный удар 3D</a>
+      						</div>
+      					</div>
+            		<!-- END .item -->
+            	</div>
+            </div>
+          </div>          
+        </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .recomm -->
+</body>
+</html>

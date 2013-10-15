@@ -35,6 +35,13 @@ table
 .btn
 	&:focus
 		outline: none
+.btn-black
+	border-color: 1px solid #303030
+	background: #414141
+	+background-image(linear-gradient(#414141, #252525))
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075)
+	color: #FFF !important
 .row_comm
 	padding-bottom: 60px
 	margin-bottom: 40px
@@ -51,6 +58,16 @@ textarea
 	+s(minus)
 .ico_complain
 	+s(complain)
+.ico_smile
+	+s(smile)
+.ico_pic
+	+s(pic)
+.ico_setting
+	+s(setting)
+.title
+	margin-bottom: 25px 
+	font-size: 18px
+	font-weight: bold
 //
 .header
 	position: relative
@@ -133,6 +150,8 @@ textarea
 		margin-left: 7px
 		&:first-child
 			margin: 0
+		&:hover
+			opacity: .7 
 .social__fb 
 	+s(fb)
 .social__tw

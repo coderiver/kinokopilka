@@ -198,6 +198,42 @@
 	padding: 40px 0
 	margin-bottom: 30px
 	background: #2f2f2f
+.detail_mod
+	margin: 0
+	background: #fff 
+	.detail__title, .detail__desc-title
+		color: #000
+		a
+			color: #000 
+	.detail__param
+		& > li
+			padding-right: 100px
+			& > strong
+				color: #000 
+			& > span
+				color: #555
+			a
+				color: #0055cc
+	.detail__recomm
+		i
+			+s(detail-recomm-1)
+	.detail__award
+		i
+			+s(detail-award-1)
+	.detail__recomm, .detail__award
+		span
+			background: #FFF
+			border: 1px solid $bc
+			color: #9b9b9b
+			box-shadow: 0 1px 0 rgba(0,0,0,.05)
+		i
+			&:before
+				border-color: transparent transparent $bc transparent
+			&:after
+				bottom: -15px
+				border-color: transparent transparent #fff transparent
+	.detail__text
+		color: #333 
 .detail__close
 	position: absolute
 	top: 12px
@@ -236,6 +272,18 @@
 .detail__actions
 	float: right
 	margin-left: 40px
+	.list-group
+		margin-bottom: 25px
+	div
+		&.list-group-item
+			+clr
+			.checkbox
+				float: left
+				margin: 5px 0 0 0
+			.btn-group
+				float: right
+			&.active
+				background: #FFF 
 .detail__btns
 	margin-bottom: 30px
 	+clr
@@ -251,24 +299,27 @@
 	float: right
 	text-align: center
 	font-size: 0
+	li
+		&:first-child
+			padding-bottom: 14px
 	i
 		position: relative
 		display: inline-block
-		margin-bottom: 14px
-		&:after
+		&:before, &:after
 			content: ""
 			position: absolute
-			bottom: -14px
 			left: 50%
 			margin-left: -6px
 			width: 0px
 			height: 0px
 			border-style: solid
 			border-width: 0 6px 6px 6px
+		&:before
+			bottom: -14px			
 			border-color: transparent transparent #606060 transparent
 	span
 		display: inline-block
-		padding: 3px 8px
+		padding: 3px 6px
 		background: #606060  
 		border-radius: 4px
 		text-align: center
@@ -281,6 +332,14 @@
 .detail__award
 	i
 		+s(detail-award)
+.detail__trailers
+	margin: 15px 0
+	text-align: center
+	.btn
+		margin: 0 5px
+		font-weight: bold
+.detail__author
+	padding-top: 10px
 .detail__title
 	margin-bottom: 10px
 	font-size: 25px
@@ -296,8 +355,11 @@
 	font-size: 15px
 	color: #aeaeae
 .detail__param
+	display: table
+	width: 564px
 	margin-bottom: 25px
-	li
+	& > li
+		position: relative
 		margin-bottom: 5px
 		& > strong
 			float: left
@@ -310,6 +372,13 @@
 			display: table
 		& > span
 			color: #FFF 
+		a
+			color: #fff 
+	.detail__stats
+		position: absolute
+		top: 0
+		right: 0
+		z-index: 10 
 	.detail__rating-in, .imdb
 		display: inline-block
 		vertical-align: middle
@@ -359,6 +428,8 @@
 	position: relative
 	min-height: 75px 
 	padding-left: 70px
+	&.is-disabled
+		opacity: .3 
 .comm__pic
 	position: absolute
 	top: 0
@@ -374,10 +445,12 @@
 	+clr
 	.comm__detail
 		padding-top: 15px 
-.comm__text
+.comm__content
 	display: table
 	p
 		margin: 0
+	img
+		margin: 10px 0
 .comm__rating
 	float: right
 	margin-left: 40px 
@@ -390,14 +463,14 @@
 			color: #cecece  
 .comm__detail
 	+clr
-.comm__user, .comm__date, .comm__count
+.comm__user, .comm__date, .comm__count, .comm__link
 	float: left
 	margin-right: 10px
 .comm__user
 	font-size: 14px
 	font-weight: bold
 	color: #000 
-.comm__date, .comm__count
+.comm__date, .comm__count, .comm__link
 	margin-top: 1px
 	font-size: 13px
 .comm__date
@@ -408,7 +481,7 @@
 	font-size: 15px
 	color: #b2b2b2 
 .comm__vote
-	display: none
+	opacity: 0 
 	float: right
 	font-size: 0
 	button
@@ -432,26 +505,92 @@
 	.comm__pic
 		top: 10px
 		left: 10px
-.comm__list
-	.comm__detail	
-		min-height: 22px
-	.comm__item
-		padding-bottom: 32px
-		margin-bottom: 25px
-		border-bottom: 1px solid $bc 
-		&:hover
-			padding-bottom: 7px
-			.comm__vote, .comm__foot
-				display: block
-	.comm__text
-		padding-right: 150px
-.comm__foot
-	display: none
-	height: 25px
+.comm__from_reply
+	margin-top: -26px
+	&:before
+		content: ""
+		position: absolute
+		top: -13px
+		left: 70px
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 0 13px 13px 13px
+		border-color: transparent transparent #f5f5f5 transparent
+.comm__form-foot
+	padding-top: 10px
 	+clr
+	.btn
+		float: left
+		margin-right: 30px
+	.social
+		float: left
+		margin: 0 30px 0 0
+	.checkbox
+		float: left
+		margin: 7px 0 0 0
+		font-size: 12px
+		input
+			margin: 2px 0 0 -20px
+	.button
+		float: right
+		height: 17px
+		margin: 7px 0 0 50px
+		background: none
+		color: $blue
+		font-size: 12px 
+		span
+			display: inline-block
+			margin-left: 10px
+			vertical-align: middle
+		&:hover
+			span
+				text-decoration: underline
+				color: #2a6496
+.comm__list
 	.btn-link
 		padding: 0
 		font-size: 12px
+	.comm__detail	
+		min-height: 22px
+	.comm__item
+		padding-bottom: 7px
+		margin-bottom: 25px
+		border-bottom: 1px solid $bc 
+		&.is-hidden
+			min-height: 0
+			padding: 0
+			margin-bottom: 5px
+			border: none
+			.comm__pic, .comm__content, .comm__foot, .comm__vote
+				display: none
+			&:hover
+				.comm__detail
+					.btn
+						display: inline-block
+		&.is-spoiler
+			.comm__content, .comm__foot, .comm__vote
+				display: none
+		&.is-negative
+			min-height: 0 
+			padding: 0 0 25px 0
+			opacity: .3  
+			.comm__pic, .comm__content, .comm__foot, .comm__vote
+				display: none
+		&:hover
+			.comm__vote, .comm__foot
+				opacity: 1 		
+	.comm__content
+		padding-right: 150px
+	.comm__detail
+		.btn-link
+			float: left
+			display: none
+			margin-top: 1px
+.comm__foot
+	height: 25px
+	opacity: 0
+	+clr	
 .comm__complaint
 	position: relative
 	float: right
@@ -482,3 +621,180 @@
 	&:hover
 		& > span
 			display: block
+.comm__reply
+	padding-left: 50px 
+.comm__roll
+	position: relative	
+	&.is-rolled
+		margin: -26px 0 25px
+.comm__btn-view
+	width: 100%
+	height: 35px
+	margin-bottom: 25px
+	background: #f5f5f5
+	color: #8e8e8e
+	font-size: 12px  
+.comm__spoiler
+	position: relative
+	padding-left: 23px 
+	color: #9b9b9b
+	i
+		position: absolute
+		top: 2px
+		left: 0
+		+s(spoiler)
+	button
+		margin-left: 15px
+		background: none
+		color: #9b9b9b
+		border-bottom: 1px solid 
+		font-size: 12px
+//movie
+.movie	
+	background-repeat: no-repeat 
+	background-position: 50% 0
+	box-shadow: 0 25px 25px rgba(0,0,0,.2) inset
+	.container
+		position: relative
+		height: 500px
+		.btn
+			position: absolute
+			bottom: 45px
+			left: 0 
+//share
+.share
+	font-size: 0
+	text-align: center
+.share__item
+	display: inline-block
+	width: 60px
+	margin: 0 10px 
+	vertical-align: top
+	span
+		position: relative
+		display: block
+		margin-bottom: 15px
+		padding: 12px 0
+		border: 1px solid $bc
+		border-radius: 3px
+		box-shadow: 0 1px 0 rgba(0,0,0,.05)
+		font-size: 18px
+		color: #9b9b9b 
+		&:after, &:before
+			content: ""
+			position: absolute
+			left: 50%
+			margin-left: -7px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 8px 7px 0 7px
+		&:before
+			bottom: -8px
+			border-color: $bc transparent transparent transparent
+		&:after
+			bottom: -6px
+			border-color: #fff transparent transparent transparent
+	button
+		width: 60px
+		height: 29px
+		box-shadow: 0 1px 1px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.2)
+		border-radius: 2px
+		font-size: 13px
+		color: #fff 
+		text-shadow: 0 1px 0 rgba(0,0,0,.15)
+		font-weight: bold
+.share__tw
+	border: 1px solid #0082be	
+	background-color: #00aaf0
+	background-image: linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%)
+.share__fb
+	border: 1px solid #21335a
+	background-color: #3b5997	
+	background-image: linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%)
+.share__gp
+	border: 1px solid #151517
+	background-color: #4d4e52
+	background-image: linear-gradient(bottom, rgba(0,0,0,.08) 0%, rgba(255,255,255,.08) 100%)
+//cast
+.cast
+	padding-bottom: 35px
+	margin-bottom: 45px
+	border-bottom: 1px solid $bc
+	+clr
+.cast__item
+	float: left
+.cast__item_mod
+	.cast__man
+		width: auto
+		padding-right: 30px
+		border-right: 1px solid $bc 
+.cast__title
+	margin-bottom: 12px
+	font-size: 15px
+	font-weight: bold 
+.cast__man
+	float: left
+	width: 90px
+	margin-right: 30px
+	line-height: 1.2
+	img
+		display: block
+		margin-bottom: 12px 
+.cast__list
+	li
+		margin-bottom: 3px
+//frames
+.frames
+	margin-bottom: 60px
+	font-size: 0
+	white-space: nowrap
+	overflow: hidden
+	a
+		display: inline-block
+		margin-right: 7px
+		vertical-align: top
+//recomm
+.recomm
+	padding: 40px 0 50px
+	margin-bottom: 40px
+	background: #f5f5f5  
+	.nav-tabs
+		height: 36px
+		box-shadow: 0 1px 0 #fff
+		li
+			font-weight: bold
+			a
+				padding: 7px 10px
+			&.active
+				a			
+					padding: 7px 10px 8px		 
+					background: #f5f5f5 
+					box-shadow: 0 1px 0 #fff inset
+	.tab-content
+		.row
+			padding-top: 20px
+			.item
+				padding-bottom: 0
+.recomm__user
+	+clr
+.recomm__user-pic
+	float: left
+	margin-right: 20px
+.recomm__user-rating
+	float: right
+	margin-left: 20px
+	font-size: 18px
+	color: #b2b2b2 
+.recomm__user-info
+	display: table
+.recomm__user-who
+	margin-bottom: 5px
+	a
+		color: #000
+		font-weight: bold 
+.recomm__user-item
+	padding-bottom: 20px
+	margin-bottom: 20px
+	border-bottom: 1px solid $bc
+	box-shadow: 0 1px 0 0 #fff 

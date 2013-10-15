@@ -23,4 +23,29 @@ function filter() {
 }
 filter();
 
+//comments
+function comments() {
+	var btn_view = $('.js-comm-view');
+	btn_view.click(function() {
+		$(this).parent().parent().removeClass('is-hidden');
+		$(this).hide();
+	});
+	var btn_spoiler = $('.js-comm-spoiler');
+	btn_spoiler.click(function() {
+		$(this).parent().parent().removeClass('is-spoiler');
+		$(this).parent().hide();
+	});
+	var btn_all = $('.js-comm-all');
+	btn_all.click(function() {		
+		$(this).parent().find('.is-hidden .js-comm-view').hide();
+		$(this).parent().find('.is-hidden').removeClass('is-hidden');
+		$(this).parent().removeClass('is-rolled');
+		$(this).hide();
+	});
+}
+comments();
+
+//
+$('.btn, .js-tooltip').tooltip();
+
 });
