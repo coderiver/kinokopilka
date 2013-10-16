@@ -45,7 +45,23 @@ function comments() {
 }
 comments();
 
+function torrent() {
+	var btn_more = $('.js-torrent-more');
+	btn_more.click(function() {
+		if ($(this).hasClass('is-open')) {
+			$(this).parent().parent().next().children().hide();
+			$(this).removeClass('is-open');
+		}
+		else {
+			$(this).parent().parent().next().children().show();
+			$(this).addClass('is-open');
+		}
+	});
+}
+torrent();
+
 //
 $('.btn, .js-tooltip').tooltip();
+$('.carousel').carousel();
 
 });

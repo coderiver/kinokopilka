@@ -198,7 +198,7 @@
 	padding: 40px 0
 	margin-bottom: 30px
 	background: #2f2f2f
-.detail_mod
+.detail_mod, .detail_small
 	margin: 0
 	background: #fff 
 	.detail__title, .detail__desc-title
@@ -234,6 +234,11 @@
 				border-color: transparent transparent #fff transparent
 	.detail__text
 		color: #333 
+.detail_small
+	padding: 45px 0 35px
+	+clr
+	.detail__slogan
+		margin-bottom: 10px
 .detail__close
 	position: absolute
 	top: 12px
@@ -269,6 +274,8 @@
 		display: block
 		border-radius: 4px
 		box-shadow: 0 0 5px rgba(0,0,0,.2)
+	.item
+		padding: 0
 .detail__actions
 	float: right
 	margin-left: 40px
@@ -282,6 +289,9 @@
 				margin: 5px 0 0 0
 			.btn-group
 				float: right
+				.dropdown-menu
+					left: auto
+					right: 0
 			&.active
 				background: #FFF 
 .detail__btns
@@ -419,11 +429,6 @@
 		display: inline-block
 		margin: 0
 //comm
-.comm__title
-	margin-bottom: 25px
-	font-size: 16px
-	font-weight: bold
-	color: #000 
 .comm__item
 	position: relative
 	min-height: 75px 
@@ -439,7 +444,7 @@
 		border-radius: 50%
 .comm__in
 	display: table
-	.comm__title
+	.title
 		margin-bottom: 10px
 .comm__critique
 	+clr
@@ -798,3 +803,236 @@
 	margin-bottom: 20px
 	border-bottom: 1px solid $bc
 	box-shadow: 0 1px 0 0 #fff 
+//online
+.online
+	background: #24303d 
+//current
+.current
+	position: relative
+	min-height: 185px
+.current__in
+	position: absolute
+	left: 0
+	bottom: 0
+.current__item	
+	float: left
+	margin-right: 10px
+	.btn
+		padding: 2px 16px
+		font-size: 30px
+		font-weight: bold
+.current__type
+	margin-bottom: 7px
+	text-align: center
+	color: #9b9b9b
+//access
+.access
+	padding: 30px 0
+	margin-bottom: 20px
+	background: #f5f5f5 
+.access__period
+	font-size: 18px
+	font-weight: bold
+	a
+		border-bottom: 1px dotted 
+		text-decoration: none 
+.access__yes
+	text-align: right
+	a
+		border-bottom: 1px dotted 
+		text-decoration: none 
+.access__steps
+	padding-top: 20px	 
+	.row
+		padding-top: 20px
+		border-top: 1px solid $bc
+		box-shadow: 0 1px 0 #fff inset
+.access__title
+	margin-bottom: 20px
+.access__step
+	font-size: 15px
+.access__in
+	select
+		&.form-control
+			width: 220px
+			margin-bottom: 10px 
+	.input-group
+		width: 200px
+	.help-block	
+		font-size: 12px
+.access__text
+	margin-bottom: 15px
+.access__price
+	display: inline-block
+	padding-top: 15px
+	border-top: 1px solid $bc 
+.access__step_mod
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 25px
+		right: 30px
+		+s(arr-big)
+.problem
+	margin-bottom: 5px
+	text-align: right
+	p
+		margin: 0
+		font-size: 12px
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+//season
+.season
+	margin-bottom: 30px
+	.nav-tabs
+		a
+			font-weight: bold
+		strong
+			position: relative
+			display: block
+			padding: 10px 15px
+	.nav-tabs-inverse
+		border-top: 1px solid #ddd
+		border-bottom: none
+		& > li
+			margin: -1px 0 0 0
+			&.active
+				margin: -1px 0 0 0
+				& > a
+					border: 1px solid #ddd
+					border-top-color: transparent
+					&:hover
+						border-color: transparent #ddd #ddd
+			& > a
+				border-radius: 0 0 4px 4px
+				&:hover
+					border-color: #ddd #eee #eee
+	.tab-content
+		padding-top: 30px			
+.series
+	margin-left: 5px
+	font-size: 0
+.series__item
+	display: inline-block
+	vertical-align: top
+	width: 226px
+	margin: 0 0 25px 10px
+	img
+		display: block
+		margin-bottom: 12px
+	a
+		font-weight: bold
+		color: #000 
+		font-size: 14px
+		span
+			display: block
+//online-btn
+.online-btn
+	padding-top: 45px
+	text-align: right
+//torrent
+.torrent
+	margin-bottom: 40px
+	.table
+		th, td
+			text-align: center
+			&.is-left
+				text-align: left
+		td
+			padding: 20px
+			vertical-align: middle
+		.torrent__more	
+			padding: 20px 20px 15px
+			text-align: left
+	.torrent__btn-more
+		+s(plus-big)
+		&.is-open
+			+s(minus-big)	
+	.torrent__table
+		td
+			padding: 0
+			border: none
+			text-align: left
+			vertical-align: top			
+			&:first-child
+				padding-right: 25px
+				text-align: right
+			p
+				margin-bottom: 2px
+				color: #676767 
+.torrent__more		
+	display: none
+	background: #f5f5f5
+.torrent__param
+	margin-bottom: 20px
+	+clr
+.torrent__table 	
+	float: left
+	width: 50%
+.torrent__info
+	+clr	
+	li
+		float: left
+		margin-right: 17px 
+		font-size: 13px
+		color: #9a9a9a 
+.torrent__pic
+	margin-bottom: 20px
+	text-align: left
+	font-size: 0
+	a
+		display: inline-block
+		margin-left: 10px
+		vertical-align: top		
+		&:first-child
+			margin: 0
+.torrent__footer
+	text-align: left
+	font-size: 12px
+.footer__actions
+	float: right
+	a
+		float: left
+		margin-left: 15px
+.torrent__added
+	display: table
+//user
+.user
+	padding: 40px 0 
+	.social
+		float: none
+		margin: 0
+		+clr
+.user__column
+	display: table
+	&:first-child
+		float: left
+		margin-right: 25px 
+.user__pic
+	margin-bottom: 20px
+	img
+		display: block
+		border-radius: 4px
+		box-shadow: 0 0 5px rgba(0,0,0,.2)
+.user__name	
+	font-size: 30px
+	font-weight: bold
+	color: #000 
+.user__stat
+	margin-bottom: 15px
+	font-size: 16px
+	color: #9b9b9b 
+.user__info
+	display: table
+	li
+		color: #555555 
+		+clr
+	strong
+		float: left
+		width: 100px
+		margin-right: 20px
+		text-align: right
+		color: #000 

@@ -1,0 +1,418 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>	
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .header -->
+<div class="header">
+	<div class="container">
+		<div class="page-header">
+		  <a href="#" class="logo">Kinokopilka</a>
+		  <div class="input-group input-group-sm search">
+        <input type="text" class="form-control" placeholder="Поиск">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><i></i></button>
+        </span>
+      </div>
+      <div class="search-load" style="display: none">
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Фильмы</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Хоббит: Нежданное путешествие <span>(2012)</span></a></li>
+	          <li><a href="#">Мистер и миссис Смит <span>(2012)</span></a></li>
+	          <li><a href="#">Сказка об Иване, пане и злыднях <span>(2012)</span></a></li>
+	          <li><a href="#">26 грабителей <span>(2012)</span></a></li>
+	        </ul>
+      	</div>  
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Актеры</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Анджелина Джоли</a></li>
+	          <li><a href="#">Керри Вашингтон</a></li>
+	        </ul>
+      	</div>
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Плейлисты</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Фильмы на одном дыхании...)</a></li>
+	          <li><a href="#">Блокбастер plus</a></li>
+	        </ul>
+      	</div>    	
+      </div>
+      <div class="social">
+      	<a class="social__fb" href="#"></a>
+      	<a class="social__tw" href="#"></a>
+      	<a class="social__vk" href="#"></a>
+      </div>
+      <div class="heade__links">
+      	<a href="#">Вход</a>
+      	<a href="#">Регистрация</a>
+      </div>
+		</div>
+	</div>
+</div>
+<!-- END .header -->
+<!-- BEGIN .nav -->
+<nav class="nav-wrap">
+	<div class="container">
+		<ul class="nav navbar-nav">
+	    <li class="active"><a href="#">Фильмы</a></li>
+	    <li><a href="#">Сериалы</a></li>
+	    <li><a href="#">Персоны</a></li>
+	    <li><a href="#">Плейлисты</a></li>
+	    <li><a href="#">Рецензии</a></li>
+	    <li><a href="#">Форумы</a></li>
+	  </ul>
+	</div>
+</nav>
+<!-- END .nav -->
+<!-- BEGIN .container -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<!-- BEGIN .detail -->
+			<div class="detail detail_small">
+				<div class="detail__left">
+					<div class="detail__pic">
+						<img src="img/detail-s.jpg" alt="">
+					</div>				
+				</div>
+				<div class="detail__info-in">
+					<div class="detail__title">
+						<a href="#">Хоббит: Нежданное путешествие</a>
+					</div>
+					<div class="detail__slogan">The Hobbit: An Unexpected Journey</div>
+				</div>
+				<div class="detail__param">
+					<div class="detail__rating">
+						<div class="detail__rating-in">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<span>7/10 (2526)</span>
+						</div>
+						<div class="imdb"><span>IMDb</span>7/10</div>	
+					</div>
+					<div class="back">
+						<a href="#">← Вернуться на страницу сериала</a>	
+					</div>					
+				</div>							
+			</div>
+			<!-- END .detail -->
+		</div>
+		<div class="col-md-4">
+			<!-- BEGIN .online-btn -->
+			<div class="online-btn">
+				<button type="button" class="btn btn-success btn-lg">Смотреть онлайн</button>
+			</div>
+			<!-- END .online-btn -->			
+		</div>
+	</div>
+	<div class="row">
+		<div class="torrent">
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th class="is-left" colspan="2">Торренты</th>
+							<th>Размер</th>
+							<th>Сидов</th>
+							<th>Личеров</th>
+							<th><button type="button" class="btn btn-default btn-sm">Добавить торрент</button></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><button class="torrent__btn-more js-torrent-more"></button></td>
+							<td class="is-left">
+								<p><a href="#">Misterios de Lisboa (www.kinokopilka.tv)</a>.torrent</p>
+								<ul class="torrent__info">
+									<li>Длительность: <strong>2ч. 45мин.</strong></li>
+									<li>Скачано: <strong>3749 раз</strong></li>
+									<li>Добавлен: <strong>10 октябля 2012 г.</strong></li>
+								</ul>
+							</td>
+							<td>1.45 Гб</td>
+							<td>2779</td>
+							<td>196</td>
+							<td><button type="button" class="btn btn-warning">Скачать</button></td>
+						</tr>
+						<tr>
+							<td class="torrent__more" colspan="6">
+								<div class="torrent__param">
+									<div class="torrent__table">
+										<table>
+											<tr>
+												<td><strong>Видео</strong></td>
+												<td><p>HD-RiP (720x368 [23.976 fps, ~1200 kbps]) <a href="#">Скачать семпл</a></p></td>
+											</tr>
+											<tr>
+												<td><strong>Формат</strong></td>
+												<td><p>avi (XviD)</p></td>
+											</tr>
+											<tr>
+												<td><strong>Субтитры</strong></td>
+												<td><p>Нет</p></td>
+											</tr>
+										</table>
+									</div>
+									<div class="torrent__table">
+										<table>
+											<tr>
+												<td><strong>Перевод</strong></td>
+												<td><p>Многоголосый</p></td>
+											</tr>
+											<tr>
+												<td><strong>Аудио дорожки</strong></td>
+												<td>
+													<p>1. AC3, 48 kHz, 384 kbps, 6 chnls - Русский многоголосый</p>
+													<p>2. AC3, 48 kHz, 384 kbps, 6 chnls</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="torrent__pic">
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+								</div>
+								<div class="torrent__footer">
+									<div class="footer__actions">
+										<a href="#">Редактировать</a>
+										<a href="#">Пожаловаться</a>
+									</div>
+									<div class="torrent__added">Добавил: <a href="#">Bizon</a> 2 дня назад</div>	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><button class="torrent__btn-more js-torrent-more"></button></td>
+							<td class="is-left">
+								<p><a href="#">Misterios de Lisboa (www.kinokopilka.tv)</a>.torrent</p>
+								<ul class="torrent__info">
+									<li>Длительность: <strong>2ч. 45мин.</strong></li>
+									<li>Скачано: <strong>3749 раз</strong></li>
+									<li>Добавлен: <strong>10 октябля 2012 г.</strong></li>
+								</ul>
+							</td>
+							<td>1.45 Гб</td>
+							<td>2779</td>
+							<td>196</td>
+							<td><button type="button" class="btn btn-warning">Скачать</button></td>
+						</tr>
+						<tr>
+							<td class="torrent__more" colspan="6">
+								<div class="torrent__param">
+									<div class="torrent__table">
+										<table>
+											<tr>
+												<td><strong>Видео</strong></td>
+												<td><p>HD-RiP (720x368 [23.976 fps, ~1200 kbps]) <a href="#">Скачать семпл</a></p></td>
+											</tr>
+											<tr>
+												<td><strong>Формат</strong></td>
+												<td><p>avi (XviD)</p></td>
+											</tr>
+											<tr>
+												<td><strong>Субтитры</strong></td>
+												<td><p>Нет</p></td>
+											</tr>
+										</table>
+									</div>
+									<div class="torrent__table">
+										<table>
+											<tr>
+												<td><strong>Перевод</strong></td>
+												<td><p>Многоголосый</p></td>
+											</tr>
+											<tr>
+												<td><strong>Аудио дорожки</strong></td>
+												<td>
+													<p>1. AC3, 48 kHz, 384 kbps, 6 chnls - Русский многоголосый</p>
+													<p>2. AC3, 48 kHz, 384 kbps, 6 chnls</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="torrent__pic">
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+								</div>
+								<div class="torrent__footer">
+									<div class="footer__actions">
+										<a href="#">Редактировать</a>
+										<a href="#">Пожаловаться</a>
+									</div>
+									<div class="torrent__added">Добавил: <a href="#">Bizon</a> 2 дня назад</div>	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><button class="torrent__btn-more js-torrent-more"></button></td>
+							<td class="is-left">
+								<p><a href="#">Misterios de Lisboa (www.kinokopilka.tv)</a>.torrent</p>
+								<ul class="torrent__info">
+									<li>Длительность: <strong>2ч. 45мин.</strong></li>
+									<li>Скачано: <strong>3749 раз</strong></li>
+									<li>Добавлен: <strong>10 октябля 2012 г.</strong></li>
+								</ul>
+							</td>
+							<td>1.45 Гб</td>
+							<td>2779</td>
+							<td>196</td>
+							<td><button type="button" class="btn btn-warning">Скачать</button></td>
+						</tr>
+						<tr>
+							<td class="torrent__more" colspan="6">
+								<div class="torrent__param">
+									<div class="torrent__table">
+										<table>
+											<tr>
+												<td><strong>Видео</strong></td>
+												<td><p>HD-RiP (720x368 [23.976 fps, ~1200 kbps]) <a href="#">Скачать семпл</a></p></td>
+											</tr>
+											<tr>
+												<td><strong>Формат</strong></td>
+												<td><p>avi (XviD)</p></td>
+											</tr>
+											<tr>
+												<td><strong>Субтитры</strong></td>
+												<td><p>Нет</p></td>
+											</tr>
+										</table>
+									</div>
+									<div class="torrent__table">
+										<table>
+											<tr>
+												<td><strong>Перевод</strong></td>
+												<td><p>Многоголосый</p></td>
+											</tr>
+											<tr>
+												<td><strong>Аудио дорожки</strong></td>
+												<td>
+													<p>1. AC3, 48 kHz, 384 kbps, 6 chnls - Русский многоголосый</p>
+													<p>2. AC3, 48 kHz, 384 kbps, 6 chnls</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="torrent__pic">
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+								</div>
+								<div class="torrent__footer">
+									<div class="footer__actions">
+										<a href="#">Редактировать</a>
+										<a href="#">Пожаловаться</a>
+									</div>
+									<div class="torrent__added">Добавил: <a href="#">Bizon</a> 2 дня назад</div>																	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><button class="torrent__btn-more js-torrent-more"></button></td>
+							<td class="is-left">
+								<p><a href="#">Misterios de Lisboa (www.kinokopilka.tv)</a>.torrent</p>
+								<ul class="torrent__info">
+									<li>Длительность: <strong>2ч. 45мин.</strong></li>
+									<li>Скачано: <strong>3749 раз</strong></li>
+									<li>Добавлен: <strong>10 октябля 2012 г.</strong></li>
+								</ul>
+							</td>
+							<td>1.45 Гб</td>
+							<td>2779</td>
+							<td>196</td>
+							<td><button type="button" class="btn btn-warning">Скачать</button></td>
+						</tr>
+						<tr>
+							<td class="torrent__more" colspan="6">
+								<div class="torrent__param">
+									<div class="torrent__table">
+										<table>
+											<tr>
+												<td><strong>Видео</strong></td>
+												<td><p>HD-RiP (720x368 [23.976 fps, ~1200 kbps]) <a href="#">Скачать семпл</a></p></td>
+											</tr>
+											<tr>
+												<td><strong>Формат</strong></td>
+												<td><p>avi (XviD)</p></td>
+											</tr>
+											<tr>
+												<td><strong>Субтитры</strong></td>
+												<td><p>Нет</p></td>
+											</tr>
+										</table>
+									</div>
+									<div class="torrent__table">
+										<table>
+											<tr>
+												<td><strong>Перевод</strong></td>
+												<td><p>Многоголосый</p></td>
+											</tr>
+											<tr>
+												<td><strong>Аудио дорожки</strong></td>
+												<td>
+													<p>1. AC3, 48 kHz, 384 kbps, 6 chnls - Русский многоголосый</p>
+													<p>2. AC3, 48 kHz, 384 kbps, 6 chnls</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="torrent__pic">
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+									<a href="#"><img src="img/torrent.jpg" alt=""></a>
+								</div>
+								<div class="torrent__footer">
+									<div class="footer__actions">
+										<a href="#">Редактировать</a>
+										<a href="#">Пожаловаться</a>
+									</div>
+									<div class="torrent__added">Добавил: <a href="#">Bizon</a> 2 дня назад</div>	
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>		
+	</div>
+</div>
+<!-- END .container -->
+</body>
+</html>

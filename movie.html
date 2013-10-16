@@ -90,7 +90,27 @@
 	<div class="detail detail_mod">
 		<div class="detail__left">
 			<div class="detail__pic">
-				<img src="img/detail.jpg" alt="">
+				<div id="carousel-example-generic" class="carousel slide">
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				      <img src="img/detail.jpg" alt="">    
+				    </div>
+						<div class="item">
+						  <img src="img/detail.jpg" alt="">    
+						</div>
+						<div class="item">
+				      <img src="img/detail.jpg" alt="">    
+				    </div>
+				  </div>
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				    <span class="icon-prev"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				    <span class="icon-next"></span>
+				  </a>
+				</div>				
 			</div>			
 			<div class="detail__trailers">
 				<button type="button" class="btn btn-default btn-sm">Трейлер 1</utton>
@@ -551,5 +571,417 @@
 	</div>
 </div>
 <!-- END .recomm -->
+<!-- BEGIN .container -->
+<div class="container">
+	<div class="row row_comm">
+		<div class="col-md-9">
+			<!-- BEGIN .comm -->
+			<div class="comm">
+				<div class="title">Рецензии</div>
+				<div class="comm__item">
+					<div class="comm__pic">
+						<a href="#"><img src="img/user.jpg" alt=""></a>
+					</div>
+					<div class="comm__in">
+						<div class="title">Фильм, меняющий реальность</div>
+						<div class="comm__critique">
+							<ul class="comm__rating">
+								<li>8.2</li>
+								<li><a href="#">14 согласны</a></li>
+								<li><a class="is-red" href="#">4 не согласны</a></li>
+							</ul>
+							<div class="comm__content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, doloremque, nostrum, est, magni qui ab obcaecati unde omnis harum earum deleniti aliquid optio sunt hic laboriosam quo commodi suscipit aperiam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, odio explicabo atque ullam veniam rem voluptatibus in unde tempore nostrum praesentium consequuntur ex sed blanditiis expedita dignissimos incidunt obcaecati magnam!</p>
+							</div>
+							<div class="comm__detail">
+								<a class="comm__user" href="#">olissol</a>
+								<div class="comm__date">2 дня назад</div>
+								<a class="comm__count" href="#">14 комментариев</a>
+							</div>							
+						</div>						
+					</div>
+				</div>
+			</div>
+			<!-- END .comm -->
+		</div>
+		<div class="col-md-3">
+			<!-- BEGIN .comm -->
+			<div class="comm">
+				<div class="comm__create">
+					<div class="btn-group">
+					  <button type="button" class="btn btn-sm btn-info">Написать рецензию</button>
+					</div>
+					<ul class="comm__create-list">
+						<li>Средний бал фильма по рецензиям: 6.8</li>
+						<li><a href="#">15 рецензий</a></li>
+						<li><a href="#">1 рецензия друга</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END .comm -->
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-9">
+			<!-- BEGIN .comm -->
+			<div class="comm">
+				<div class="title">Комментарии</div>
+				<div class="comm__list">
+					<div class="comm__form">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__area">
+							<textarea class="form-control" rows="2" placeholder="Ваш комменатрий"></textarea>
+						</div>
+					</div>
+					<div class="comm__item">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__detail">
+							<a class="comm__user" href="#">olissol</a>
+							<div class="comm__date">2 дня назад</div>
+							<div class="comm__stats">+47</div>
+							<div class="comm__vote">
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_plus"></i></button>
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_minus"></i></button>
+							</div>							
+						</div>
+						<div class="comm__content">
+							<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+						</div>
+						<div class="comm__foot">
+							<button class="btn btn-link">Ответить</button>
+							<div class="comm__complaint">
+								<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="comm__reply">
+						<div class="comm__item">
+							<div class="comm__pic">
+								<a href="#"><img src="img/user.jpg" alt=""></a>
+							</div>
+							<div class="comm__detail">
+								<a class="comm__user" href="#">olissol</a>
+								<div class="comm__date">2 дня назад</div>
+								<div class="comm__stats">+47</div>
+								<div class="comm__vote">
+									<button type="button" class="btn btn-default btn-xs"><i class="ico ico_plus"></i></button>
+									<button type="button" class="btn btn-default btn-xs"><i class="ico ico_minus"></i></button>
+								</div>							
+							</div>
+							<div class="comm__content">
+								<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+							</div>
+							<div class="comm__foot">
+								<button class="btn btn-link">Ответить</button>
+								<div class="comm__complaint">
+									<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comm__item is-disabled">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__detail">
+							<a class="comm__user" href="#">olissol</a>
+							<div class="comm__date">2 дня назад</div>
+							<div class="comm__stats">+47</div>
+							<div class="comm__vote">
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_plus"></i></button>
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_minus"></i></button>
+							</div>							
+						</div>
+						<div class="comm__content">
+							<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+						</div>
+						<div class="comm__foot">
+							<button class="btn btn-link">Ответить</button>
+							<div class="comm__complaint">
+								<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="comm__item">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__detail">
+							<a class="comm__user" href="#">olissol</a>
+							<div class="comm__date">2 дня назад</div>
+							<div class="comm__stats">+47</div>
+							<div class="comm__vote">
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_plus"></i></button>
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_minus"></i></button>
+							</div>							
+						</div>
+						<div class="comm__content">
+							<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+							<img src="img/pic.jpg" alt="">
+						</div>
+						<div class="comm__foot">
+							<button class="btn btn-link">Ответить</button>
+							<div class="comm__complaint">
+								<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="comm__reply">
+						<div class="comm__item">
+							<div class="comm__pic">
+								<a href="#"><img src="img/user.jpg" alt=""></a>
+							</div>
+							<div class="comm__detail">
+								<a class="comm__user" href="#">olissol</a>
+								<div class="comm__date">2 дня назад</div>
+								<div class="comm__stats">+47</div>
+								<div class="comm__vote">
+									<button type="button" class="btn btn-default btn-xs"><i class="ico ico_plus"></i></button>
+									<button type="button" class="btn btn-default btn-xs"><i class="ico ico_minus"></i></button>
+								</div>							
+							</div>
+							<div class="comm__content">
+								<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её!</p>
+							</div>
+							<div class="comm__foot">
+								<button class="btn btn-link">Ответить</button>
+								<div class="comm__complaint">
+									<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="comm__roll is-rolled">
+							<button class="comm__btn-view js-comm-all">Раскрыть все 6 ответов</button>
+							<div class="comm__item is-hidden">
+								<div class="comm__pic">
+									<a href="#"><img src="img/user.jpg" alt=""></a>
+								</div>
+								<div class="comm__detail">
+									<a class="comm__user" href="#">olissol</a>
+									<div class="comm__date">2 дня назад</div>
+									<button class="btn btn-link js-comm-view">Показать</button>
+									<div class="comm__stats">+47</div>
+									<div class="comm__vote">
+										<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_plus"></i></button>
+										<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_minus"></i></button>
+									</div>							
+								</div>
+								<div class="comm__content">
+									<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+								</div>
+								<div class="comm__foot">
+									<button class="btn btn-link" data-original-title="" title="">Ответить</button>
+									<div class="comm__complaint">
+										<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="comm__item is-hidden">
+								<div class="comm__pic">
+									<a href="#"><img src="img/user.jpg" alt=""></a>
+								</div>
+								<div class="comm__detail">
+									<a class="comm__user" href="#">olissol</a>
+									<div class="comm__date">2 дня назад</div>
+									<button class="btn btn-link js-comm-view">Показать</button>
+									<div class="comm__stats">+47</div>
+									<div class="comm__vote">
+										<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_plus"></i></button>
+										<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_minus"></i></button>
+									</div>							
+								</div>
+								<div class="comm__content">
+									<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+								</div>
+								<div class="comm__foot">
+									<button class="btn btn-link" data-original-title="" title="">Ответить</button>
+									<div class="comm__complaint">
+										<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="comm__item is-hidden">
+								<div class="comm__pic">
+									<a href="#"><img src="img/user.jpg" alt=""></a>
+								</div>
+								<div class="comm__detail">
+									<a class="comm__user" href="#">olissol</a>
+									<div class="comm__date">2 дня назад</div>
+									<button class="btn btn-link js-comm-view">Показать</button>
+									<div class="comm__stats">+47</div>
+									<div class="comm__vote">
+										<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_plus"></i></button>
+										<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_minus"></i></button>
+									</div>							
+								</div>
+								<div class="comm__content">
+									<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+								</div>
+								<div class="comm__foot">
+									<button class="btn btn-link" data-original-title="" title="">Ответить</button>
+									<div class="comm__complaint">
+										<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="comm__reply">
+								<div class="comm__item is-hidden">
+									<div class="comm__pic">
+										<a href="#"><img src="img/user.jpg" alt=""></a>
+									</div>
+									<div class="comm__detail">
+										<a class="comm__user" href="#">olissol</a>
+										<div class="comm__date">2 дня назад</div>
+										<button class="btn btn-link js-comm-view">Показать</button>
+										<div class="comm__stats">+47</div>
+										<div class="comm__vote">
+											<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_plus"></i></button>
+											<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_minus"></i></button>
+										</div>							
+									</div>
+									<div class="comm__content">
+										<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+									</div>
+									<div class="comm__foot">
+										<button class="btn btn-link" data-original-title="" title="">Ответить</button>
+										<div class="comm__complaint">
+											<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+										</div>
+									</div>
+								</div>
+								<div class="comm__reply">
+									<div class="comm__item is-hidden">
+										<div class="comm__pic">
+											<a href="#"><img src="img/user.jpg" alt=""></a>
+										</div>
+										<div class="comm__detail">
+											<a class="comm__user" href="#">olissol</a>
+											<div class="comm__date">2 дня назад</div>
+											<button class="btn btn-link js-comm-view">Показать</button>
+											<div class="comm__stats">+47</div>
+											<div class="comm__vote">
+												<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_plus"></i></button>
+												<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_minus"></i></button>
+											</div>							
+										</div>
+										<div class="comm__content">
+											<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+										</div>
+										<div class="comm__foot">
+											<button class="btn btn-link" data-original-title="" title="">Ответить</button>
+											<div class="comm__complaint">
+												<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comm__item is-spoiler">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__detail">
+							<a class="comm__user" href="#">olissol</a>
+							<div class="comm__date">2 дня назад</div>
+							<div class="comm__stats">+47</div>
+							<div class="comm__vote">
+								<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_plus"></i></button>
+								<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_minus"></i></button>
+							</div>							
+						</div>
+						<div class="comm__spoiler">Комментарий помечен как спойлер<button class="js-comm-spoiler">Показать</button><i></i></div>
+						<div class="comm__content">
+							<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+						</div>
+						<div class="comm__foot">
+							<button class="btn btn-link" data-original-title="" title="">Ответить</button>
+							<div class="comm__complaint">
+								<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="comm__item is-negative">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__detail">
+							<a class="comm__user" href="#">olissol</a>
+							<div class="comm__date">2 дня назад</div>
+							<div class="comm__stats">+47</div>
+							<div class="comm__vote">
+								<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_plus"></i></button>
+								<button type="button" class="btn btn-default btn-xs" data-original-title="" title=""><i class="ico ico_minus"></i></button>
+							</div>							
+						</div>
+						<div class="comm__content">
+							<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+						</div>
+						<div class="comm__foot">
+							<button class="btn btn-link" data-original-title="" title="">Ответить</button>
+							<div class="comm__complaint">
+								<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="comm__item">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__detail">
+							<a class="comm__user" href="#">olissol</a>
+							<div class="comm__date">2 дня назад</div>
+							<div class="comm__stats">+47</div>
+							<div class="comm__vote">
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_plus"></i></button>
+								<button type="button" class="btn btn-default btn-xs"><i class="ico ico_minus"></i></button>
+							</div>							
+						</div>
+						<div class="comm__content">
+							<p>отличный фильм))) смотрели вместе со старшей сестрой - для меня главная оценка это её! - она мне после просмотра фильма сказала: "и где ты находишь такие классные фильмы? побольше бы таких, после него на душе как то тепло,,," определенно смотреть</p>
+						</div>
+						<div class="comm__foot">
+							<button class="btn btn-link">Ответить</button>
+							<div class="comm__complaint">
+								<button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Пожаловаться"><i class="ico ico_complain"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="comm__form comm__from_reply">
+						<div class="comm__pic">
+							<a href="#"><img src="img/user.jpg" alt=""></a>
+						</div>
+						<div class="comm__area">
+							<textarea class="form-control" rows="2" placeholder="Ваш комменатрий"></textarea>
+							<div class="comm__form-foot">
+							  <button type="button" class="btn btn-sm btn-info" data-original-title="" title="">Отправить</button>
+								<div class="social">
+					      	<a class="social__fb" href="#"></a>
+					      	<a class="social__tw" href="#"></a>
+					      	<a class="social__vk" href="#"></a>
+					      </div>
+					      <div class="checkbox">
+					        <label>
+					          <input type="checkbox"> Это спойлер
+					        </label>
+					      </div>					      
+					      <button class="button"><i class="ico ico_pic"></i><span>Приложить картинку</span></button>
+								<button class="button"><i class="ico ico_smile"></i><span>Смайлы</span></button>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- END .comm -->
+		</div>
+	</div>
+</div>
+<!-- END .container -->
 </body>
 </html>

@@ -1,0 +1,355 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>	
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .header -->
+<div class="header">
+	<div class="container">
+		<div class="page-header">
+		  <a href="#" class="logo">Kinokopilka</a>
+		  <div class="input-group input-group-sm search">
+        <input type="text" class="form-control" placeholder="Поиск">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><i></i></button>
+        </span>
+      </div>
+      <div class="search-load" style="display: none">
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Фильмы</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Хоббит: Нежданное путешествие <span>(2012)</span></a></li>
+	          <li><a href="#">Мистер и миссис Смит <span>(2012)</span></a></li>
+	          <li><a href="#">Сказка об Иване, пане и злыднях <span>(2012)</span></a></li>
+	          <li><a href="#">26 грабителей <span>(2012)</span></a></li>
+	        </ul>
+      	</div>  
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Актеры</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Анджелина Джоли</a></li>
+	          <li><a href="#">Керри Вашингтон</a></li>
+	        </ul>
+      	</div>
+      	<div class="search-load__row">
+	      	<div class="search-load__type">Плейлисты</div>
+					<ul class="search-load__list">
+	          <li><a href="#">Фильмы на одном дыхании...)</a></li>
+	          <li><a href="#">Блокбастер plus</a></li>
+	        </ul>
+      	</div>    	
+      </div>
+      <div class="social">
+      	<a class="social__fb" href="#"></a>
+      	<a class="social__tw" href="#"></a>
+      	<a class="social__vk" href="#"></a>
+      </div>
+      <div class="heade__links">
+      	<a href="#">Вход</a>
+      	<a href="#">Регистрация</a>
+      </div>
+		</div>
+	</div>
+</div>
+<!-- END .header -->
+<!-- BEGIN .nav -->
+<nav class="nav-wrap">
+	<div class="container">
+		<ul class="nav navbar-nav">
+	    <li class="active"><a href="#">Фильмы</a></li>
+	    <li><a href="#">Сериалы</a></li>
+	    <li><a href="#">Персоны</a></li>
+	    <li><a href="#">Плейлисты</a></li>
+	    <li><a href="#">Рецензии</a></li>
+	    <li><a href="#">Форумы</a></li>
+	  </ul>
+	</div>
+</nav>
+<!-- END .nav -->
+<!-- BEGIN .container -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<!-- BEGIN .detail -->
+			<div class="detail detail_small">
+				<div class="detail__left">
+					<div class="detail__pic">
+						<img src="img/detail-s.jpg" alt="">
+					</div>				
+				</div>
+				<div class="detail__info-in">
+					<div class="detail__title">
+						<a href="#">Хоббит: Нежданное путешествие</a>
+					</div>
+					<div class="detail__slogan">The Hobbit: An Unexpected Journey</div>
+				</div>
+				<div class="detail__param">
+					<div class="detail__rating">
+						<div class="detail__rating-in">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star-a.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<img src="img/star.png" alt="">
+							<span>7/10 (2526)</span>
+						</div>
+						<div class="imdb"><span>IMDb</span>7/10</div>	
+					</div>
+					<div class="back">
+						<a href="#">← Вернуться на страницу сериала</a>	
+					</div>					
+				</div>							
+			</div>
+			<!-- END .detail -->
+		</div>
+		<div class="col-md-4">
+			<!-- BEGIN .current -->
+			<div class="current">
+				<div class="current__in">
+					<div class="current__item">
+						<div class="current__type">Сезон</div>
+						<div class="btn-group">
+		          <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+		            01 <span class="caret"></span>
+		          </button>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </div>
+					</div>
+					<div class="current__item">
+						<div class="current__type">Серия</div>
+						<div class="btn-group">
+		          <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+		            08 <span class="caret"></span>
+		          </button>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </div>
+					</div>
+				</div>				
+			</div>
+			<!-- END .current -->
+		</div>
+	</div>
+	
+</div>
+<!-- END .container -->
+<!-- BEGIN .online -->
+<div class="online">
+	<!-- BEGIN .container -->
+	<div class="container">
+		<img src="img/player.jpg" style="margin: 0 auto; display: inherit" alt="">
+	</div>
+	<!-- END .container -->
+</div>
+<!-- END .online -->
+<!-- BEGIN .access -->
+<div class="access">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="access__period">Чтобы получить полный доступ ко всем фильмам на 1 день <a href="#">неделю</a> <a href="#">месяц</a></div>
+			</div>
+			<div class="col-md-4">
+				<div class="access__yes">Уже есть доступ? <a href="#">Введите код</a></div>
+			</div>				
+		</div>
+		<div class="access__steps">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="access__step access__step_mod">
+						<div class="access__title"><strong>Шаг 1:</strong> Выберите оператора</div>
+						<div class="access__in">
+							<select class="form-control">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				      </select>
+				      <select class="form-control">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				      </select>
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="access__step access__step_mod">
+						<div class="access__title"><strong>Шаг 1:</strong> Отправте СМС</div>
+						<div class="access__text">с текстом <strong>2607</strong> на номер <strong>1863</strong></div>
+						<div class="access__price">Цена: <strong>3.00 LVL</strong></div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="access__step">
+						<div class="access__title"><strong>Шаг 1:</strong> Введите полученный код</div>
+							<div class="access__in">
+								<div class="input-group">
+		            <input type="text" class="form-control">
+		            <span class="input-group-btn">
+		              <button class="btn btn-primary" type="button">Готово</button>
+		            </span>
+		          </div>
+		          <span class="help-block">Полученный код вы можете использовать неограниченное количество раз в течении выбраного времени.</span>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+<!-- END .access -->
+<!-- BEGIN .container -->
+<div class="container">
+	<!-- BEGIN .problem -->
+	<div class="problem">
+		<p>Возникли проблемы? Напишите нам или обращайтесь на <a href="#">форум поддержки</a></p>
+		<p><a href="#">Правила оплаты</a></p>
+	</div>
+	<!-- END .problem -->
+	<!-- BEGIN .season -->
+	<div class="season">
+		<div class="row">
+			<ul class="nav nav-tabs">
+				<li><strong>Сезоны</strong></li>
+			  <li class="active"><a href="#tab1" data-toggle="tab">01</a></li>
+			  <li><a href="#tab2" data-toggle="tab">02</a></li>
+			  <li><a href="#tab3" data-toggle="tab">03</a></li>
+			  <li><a href="#tab4" data-toggle="tab">04</a></li>
+			  <li><a href="#tab5" data-toggle="tab">05</a></li>
+			  <li><a href="#tab6" data-toggle="tab">06</a></li>
+			  <li><a href="#tab7" data-toggle="tab">07</a></li>
+			  <li><a href="#tab8" data-toggle="tab">08</a></li>
+			</ul>
+			<div class="tab-content">
+			  <div class="tab-pane fade active in" id="tab1">
+					<div class="row">
+						<!-- BEGIN .series -->
+						<div class="series">
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+							<div class="series__item">
+								<a href="#"><img src="img/series.jpg" alt=""></a>
+								<a href="#">The Big Bang Theory <span>01x01</span></a>
+							</div>
+						</div>
+						<!-- END .series -->
+					</div>
+			  </div>
+			   <div class="tab-pane fade in" id="tab2">
+					tab2
+			  </div>
+			</div>
+			<ul class="nav nav-tabs nav-tabs-inverse">
+				<li><strong>Сезоны</strong></li>
+			  <li class="active"><a href="#tab1" data-toggle="tab">01</a></li>
+			  <li><a href="#tab2" data-toggle="tab">02</a></li>
+			  <li><a href="#tab3" data-toggle="tab">03</a></li>
+			  <li><a href="#tab4" data-toggle="tab">04</a></li>
+			  <li><a href="#tab5" data-toggle="tab">05</a></li>
+			  <li><a href="#tab6" data-toggle="tab">06</a></li>
+			  <li><a href="#tab7" data-toggle="tab">07</a></li>
+			  <li><a href="#tab8" data-toggle="tab">08</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- END .season -->
+</div>
+<!-- END .container -->
+</body>
+</html>
