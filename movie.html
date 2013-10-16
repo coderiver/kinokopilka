@@ -124,29 +124,33 @@
 						<button type="button" class="btn btn-lg btn-success" data-original-title="" title="">Смотреть</button>
 						<button type="button" class="btn btn-lg btn-warning" data-original-title="" title="">Скачать</button>
 					</div>
-					<div class="list-group">
-            <a href="#" class="list-group-item">Добавить в фавориты</a>
-            <a href="#" class="list-group-item active">Посмотреть позже</a>
-            <a href="#" class="list-group-item">Добавить в плейлист</a>
-            <a href="#" class="list-group-item">Рекомендовать</a>
-            <div class="list-group-item">            	
-            	<div class="checkbox">
-				        <label>
-				          <input type="checkbox"> Уже смотрел
-				        </label>
-				      </div>
-							<div class="btn-group">
-				        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><i class="ico ico_setting"></i> <span class="caret"></span></button>
-				        <ul class="dropdown-menu" role="menu">
-				          <li><a href="#">Action</a></li>
-				          <li><a href="#">Another action</a></li>
-				          <li><a href="#">Something else here</a></li>
-				          <li class="divider"></li>
-				          <li><a href="#">Separated link</a></li>
-				        </ul>
-				      </div>
-            </div>
-          </div>		
+					<!-- BEGIN .actions -->
+					<div class="actions">
+						<div class="list-group">
+	            <a href="#" class="list-group-item"><i class="ico ico_act-star"></i>Добавить в фавориты</a>
+	            <a href="#" class="list-group-item active"><i class="ico ico_act-time"></i>Посмотреть позже</a>
+	            <a href="#" class="list-group-item"><i class="ico ico_act-list"></i>Добавить в плейлист</a>
+	            <a href="#" class="list-group-item"><i class="ico ico_act-finger"></i>Рекомендовать</a>
+	            <div class="list-group-item">            	
+	            	<div class="checkbox">
+					        <label>
+					          <input type="checkbox"> Уже смотрел
+					        </label>
+					      </div>
+								<div class="btn-group">
+					        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" data-original-title="" title=""><i class="ico ico_setting"></i> <span class="caret"></span></button>
+					        <ul class="dropdown-menu" role="menu">
+					          <li><a href="#">Action</a></li>
+					          <li><a href="#">Another action</a></li>
+					          <li><a href="#">Something else here</a></li>
+					          <li class="divider"></li>
+					          <li><a href="#">Separated link</a></li>
+					        </ul>
+					      </div>
+	            </div>
+	          </div>
+					</div>
+					<!-- END .actions -->		
           <!-- BEGIN .share -->
           <div class="share">
           	<div class="share__item">
@@ -188,16 +192,18 @@
 							</div>
 							<div class="imdb"><span>IMDb</span>7/10</div>	
 						</div>
-						<div class="detail__stats">							
-							<ul class="detail__award">
-								<li><i></i></li>
-								<li><span>14</span></li>
-							</ul>
-							<ul class="detail__recomm js-tooltip" data-toggle="tooltip" data-placement="top" data-original-title="6 рекомендаций">
-								<li><i></i></li>
-								<li><span>6</span></li>
-							</ul>
+						<!-- BEGIN .stats -->
+						<div class="stats">
+							<div class="stats__item js-tooltip" data-toggle="tooltip" data-placement="top" data-original-title="yo man!">
+								<i class="ico ico_stat-finger"></i>
+								<span>14</span>
+							</div>
+							<div class="stats__item js-tooltip" data-toggle="tooltip" data-placement="top" data-original-title="yo man!">
+								<i class="ico ico_stat-award"></i>
+								<span>14</span>
+							</div>
 						</div>
+						<!-- END .stats -->
 					</li>
 					<li>
 						<strong>Жанр</strong>
