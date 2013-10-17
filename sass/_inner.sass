@@ -1058,4 +1058,89 @@
 					right: 0
 			&.active
 				background: #FFF
-			
+//modal
+.modal_start
+	display: block
+	padding-top: 150px
+	background-repeat: no-repeat
+	background-position: 0 0
+	background-size: cover   
+	.modal-header
+		+clr	
+.modal-header__right
+	float: right
+	margin-top: 5px
+.login
+	.title
+		margin-bottom: 15px
+		font-size: 25px
+	.login__desc
+		margin-bottom: 50px
+	.control-label
+		margin-bottom: 15px
+		font-size: 16px
+	.row
+		.col-md-6
+			border-left: 1px solid $bc 
+			&:first-child
+				border: none 
+	.form-group 	
+		.link
+			float: right
+.login__social
+	button
+		position: relative
+		width: 100%
+		height: 44px
+		padding-left: 44px
+		margin-bottom: 20px
+		border-radius: 5px 
+		text-align: left
+		color: #FFF
+		overflow: visible
+		i
+			position: absolute
+			top: 7px
+			left: 8px
+		&.login__fb
+			background: #3b5998
+			i
+				+s(fb)
+		&.login__vk
+			background: #446892
+			i
+				+s(vk)
+		&.login__tw
+			background: #28aae1 
+			i
+				+s(tw)
+.login__info
+	padding-top: 40px
+	text-align: center
+	font-size: 12px
+	color: #6c6c6c 
+//modal-body_recomm
+.modal_recomm
+	.modal-footer
+		margin: 0
+	.help-block
+		margin-bottom: 0
+	.modal-radio
+		padding-bottom: 10px
+		margin-bottom: 30px
+		border-bottom: 1px solid $bc 
+		.radio
+			margin-bottom: 20px
+	.radio_mod
+		input[type="radio"]	
+			margin-top: 10px
+		input[type="text"]	
+			width: 240px
+	.modal-checkbox
+		display: none
+		padding-left: 20px
+		margin-bottom: 20px
+		+clr
+		.checkbox
+			float: left
+			margin: 0 20px 0 0

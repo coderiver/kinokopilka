@@ -60,6 +60,11 @@ function torrent() {
 }
 torrent();
 
+//recomm
+$('.js-recomm input').change(function() {
+	$(this).parent().parent().next().slideDown();
+});
+
 //
 $('.btn, .js-tooltip').tooltip();
 $('.carousel').carousel();
