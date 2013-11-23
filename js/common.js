@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+
+$('.userblock__in').click(function(event) {
+	$(this).parent().toggleClass('is-active')
+});
+
 //filter
 function filter() {	
 	var el = $('.js-filter');
