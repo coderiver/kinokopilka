@@ -144,8 +144,8 @@ textarea.form-control { resize: vertical; }
 .nav-wrap .nav a { color: white; font-size: 16px; font-weight: bold; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
 .nav-wrap .nav a:hover { background: #5b7999; }
 
-.footer { border-top: 1px solid #efefef; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdfdfd), color-stop(100%, #e9e9e9)); background-image: -webkit-linear-gradient(#fdfdfd, #e9e9e9); background-image: -moz-linear-gradient(#fdfdfd, #e9e9e9); background-image: -o-linear-gradient(#fdfdfd, #e9e9e9); background-image: linear-gradient(#fdfdfd, #e9e9e9); }
-.footer .footer__bottom { padding: 10px 0; border-top: 1px solid #e1e1e1; -webkit-box-shadow: inset 0 1px 0 white; -moz-box-shadow: inset 0 1px 0 white; box-shadow: inset 0 1px 0 white; }
+.footer { padding-top: 10px; border-top: 1px solid #efefef; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdfdfd), color-stop(100%, #e9e9e9)); background-image: -webkit-linear-gradient(#fdfdfd, #e9e9e9); background-image: -moz-linear-gradient(#fdfdfd, #e9e9e9); background-image: -o-linear-gradient(#fdfdfd, #e9e9e9); background-image: linear-gradient(#fdfdfd, #e9e9e9); }
+.footer .footer__bottom { padding: 10px 0; border-top: 1px solid #e1e1e1; -webkit-box-shadow: inset 0 1px 0 white; -moz-box-shadow: inset 0 1px 0 white; box-shadow: inset 0 1px 0 white; margin-top: 20px; }
 .footer .footer__social { text-align: right; }
 .footer h3 { color: #1e1e1e; font-weight: bold; font-size: 15px; margin-bottom: 12px; }
 .footer ul { list-style: none; font-size: 12px; }
