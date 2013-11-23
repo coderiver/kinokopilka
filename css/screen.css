@@ -109,9 +109,15 @@ textarea.form-control { resize: vertical; }
 
 .social__vk { background: url('../img/icons-s6e121f5d73.png') 0 -805px no-repeat; width: 28px; height: 28px; }
 
-.nav-wrap { background: #5b7999; }
+.nav-wrap { background: #5b7999; position: relative; z-index: 200; }
 .nav-wrap .nav li.active { background: #415b77; }
 .nav-wrap .nav li.active a { color: #b1cbe4; }
+.nav-wrap .nav li ul { display: none; }
+@media only screen and (max-width: 780px) { .nav-wrap .nav li ul { display: none !important; } }
+.nav-wrap .nav li:hover ul { display: block; position: absolute; top: 100%; left: 0; background: #5b7999; width: 200px; }
+.nav-wrap .nav li:hover ul li, .nav-wrap .nav li:hover ul a { float: none; display: block; }
+.nav-wrap .nav li:hover ul a { padding: 4px 15px; text-decoration: none; }
+.nav-wrap .nav li:hover ul a:hover { background: #415b77; }
 .nav-wrap .nav a { color: white; font-size: 16px; font-weight: bold; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
 .nav-wrap .nav a:hover { background: #5b7999; }
 

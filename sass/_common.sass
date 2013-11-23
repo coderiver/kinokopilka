@@ -184,12 +184,35 @@ textarea
 	+s(vk)
 .nav-wrap
 	background: #5b7999 
+	position: relative
+	z-index: 200 
 	.nav
 		li
 			&.active
 				background: #415b77
 				a
 					color: #b1cbe4  
+			ul
+				display: none
+				+rt(780)
+					display: none !important
+			&:hover
+				ul
+					display: block
+					position: absolute
+					top: 100%
+					left: 0 
+					background: #5B7999
+					width: 200px  
+					li,a
+						float: none
+						display: block
+					a
+						padding: 4px 15px
+						text-decoration: none
+						&:hover
+							background: #415B77
+							 
 		a
 			color: #fff
 			font-size: 16px
@@ -197,3 +220,5 @@ textarea
 			text-shadow: 0 -1px 0 rgba(0,0,0,.3)
 			&:hover
 				background: #5b7999
+		
+			

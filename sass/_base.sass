@@ -79,6 +79,10 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 			@content
 	@else if $media == 1120
 		@media only screen and (max-width: 1120px)
+			@content
+	@else if $media == 780
+		@media only screen and (max-width: 780px)
+			@content
 //fonts
 @font-face
 	font-family: 'HelveticaNeueCyrMedium'
