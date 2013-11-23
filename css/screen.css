@@ -119,7 +119,7 @@ textarea.form-control { resize: vertical; }
 .userblock .userblock__position { font-size: 13px; color: #939393; margin-top: 5px; }
 .userblock .userblock__arr { position: absolute; top: 50%; right: 20px; margin-top: -3px; background: url('../img/icons-sc1bbd9af41.png') 0 -490px no-repeat; width: 11px; height: 6px; }
 .userblock .userblock__drop { position: absolute; top: 80px; left: 0; width: 200px; background: white; border: 1px solid #567897; -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); border-radius: 3px; display: none; opacity: 0; top: 70px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
-.userblock.is-active .userblock__drop { display: block; top: 80px; opacity: 1; }
+.userblock.is-active .userblock__drop { display: block; top: 80px; opacity: 1; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .userblock .userblock__droptop { background: whitesmoke; padding: 10px; }
 .userblock .userblock__droptop:before, .userblock .userblock__droptop:after { content: ""; display: table; }
 .userblock .userblock__droptop:after { clear: both; }
@@ -143,6 +143,14 @@ textarea.form-control { resize: vertical; }
 .nav-wrap .nav li:hover ul a:hover { background: #415b77; }
 .nav-wrap .nav a { color: white; font-size: 16px; font-weight: bold; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
 .nav-wrap .nav a:hover { background: #5b7999; }
+
+.footer { border-top: 1px solid #efefef; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdfdfd), color-stop(100%, #e9e9e9)); background-image: -webkit-linear-gradient(#fdfdfd, #e9e9e9); background-image: -moz-linear-gradient(#fdfdfd, #e9e9e9); background-image: -o-linear-gradient(#fdfdfd, #e9e9e9); background-image: linear-gradient(#fdfdfd, #e9e9e9); }
+.footer .footer__bottom { padding: 10px 0; border-top: 1px solid #e1e1e1; -webkit-box-shadow: inset 0 1px 0 white; -moz-box-shadow: inset 0 1px 0 white; box-shadow: inset 0 1px 0 white; }
+.footer .footer__social { text-align: right; }
+.footer h3 { color: #1e1e1e; font-weight: bold; font-size: 15px; margin-bottom: 12px; }
+.footer ul { list-style: none; font-size: 12px; }
+.footer ul li { margin-bottom: 3px; }
+.footer ul a { color: #5e5e5e; text-decoration: none; }
 
 @font-face { font-family: "HelveticaNeueCyrMedium"; src: url("../fonts/helveticaneuecyr-medium.eot"); src: url("../fonts/helveticaneuecyr-medium.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-medium.woff") format("woff"), url("../fonts/helveticaneuecyr-medium.ttf") format("truetype"), url("../fonts/helveticaneuecyr-medium.svg#HelveticaNeueCyrMedium") format("svg"); }
 
