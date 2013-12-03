@@ -118,7 +118,7 @@ textarea.form-control { resize: vertical; }
 .userblock .userblock__name { font-weight: bold; font-size: 14px; color: #45617d; line-height: 1; }
 .userblock .userblock__position { font-size: 12px; color: #939393; margin-top: 5px; }
 .userblock .userblock__arr { position: absolute; top: 50%; right: 20px; margin-top: -3px; background: url('../img/icons-sc1bbd9af41.png') 0 -490px no-repeat; width: 11px; height: 6px; }
-.userblock .userblock__drop { position: absolute; top: 80px; left: 0; width: 200px; background: white; border: 1px solid #567897; -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0); -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0); box-shadow: 0 0 7px rgba(0, 0, 0, 0); border-radius: 3px; display: none; opacity: 0; top: 70px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.userblock .userblock__drop { position: absolute; top: 80px; left: 0; width: 200px; background: white; border: 1px solid #567897; -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); border-radius: 3px; display: none; opacity: 0; top: 70px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .userblock.is-active .userblock__drop { display: block; top: 80px; opacity: 1; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .userblock .userblock__droptop { position: relative; background: whitesmoke; padding: 10px; }
 .userblock .userblock__droptop:before, .userblock .userblock__droptop:after { content: ""; display: table; }
