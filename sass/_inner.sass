@@ -66,7 +66,7 @@
 //item
 .item
 	position: relative
-	display: inline-block
+	// display: inline-block
 	padding-bottom: 30px
 	&.is-active
 		&:after
@@ -84,7 +84,7 @@
 	position: relative
 	margin-bottom: 10px
 	&:hover
-		.item__up
+		.item__up, .item__actions
 			display: block
 .item__video
 	position: absolute
@@ -124,24 +124,35 @@
 .item__up
 	display: none
 	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	padding: 13px
-	background: rgb(0,0,0) 
-	background: rgba(0,0,0,.8) 
-	z-index: 10 
+	bottom: 90%
+	left: -27px
+	right: -27px
+	padding: 10px 13px
+	background-color: rgba(0,0,0,.9)
+	+box-shadow(0 1px 19px rgba(0,0,0,.35))
+	+border-radius(5px)
+	z-index: 1000
+	&:after
+		position: absolute
+		bottom: -11px
+		left: 50%
+		margin-left: -11px
+		width: 0px
+		height: 0px
+		border-style: solid
+		border-width: 11px 11px 0 11px
+		border-color: rgba(0,0,0,.9) transparent transparent transparent
+		content: ""
 .item__title
 	margin-bottom: 10px
-	font-size: 18px
+	font-size: 16px
 	font-weight: bold
 	color: #FFF 
 	line-height: 1
 	a
 		color: #FFF 
 .imdb, .kinopoisk
-	margin-bottom: 12px
+	display: inline-block
 	line-height: 16px
 	color: #f3cb05 
 	font-size: 13px
@@ -149,7 +160,7 @@
 	span
 		float: left
 		height: 16px
-		padding: 0 5px
+		padding: 0 3px
 		margin-right: 9px
 		background: #f3cb05
 		box-shadow: 0 1px 0 rgba(255,255,255,.5) inset
@@ -159,10 +170,12 @@
 		color: #000
 		text-shadow: 0 1px 0 rgba(255,255,255,.5) 
 .kinopoisk
-	color: #ff9645 
+	color: #ff9645
+	margin-left: 15px
 	span
 		background: #ff9645 
 .item__actions
+	display: none
 	position: absolute
 	bottom: 13px
 	right: 13px
@@ -182,6 +195,8 @@
 			+background-image(linear-gradient(bottom, #717171 0%, #2f2f2f 100%))
 .item__star
 	float: left
+	i
+		+s(item-star)
 	&.is-active
 		i
 			+s(item-star-a)
@@ -189,9 +204,15 @@
 	float: right
 	i
 		+s(item-check)
+	&.is-active
+		i
+			+s(item-check-a)
 .item__time
 	i
 		+s(item-time)
+	&.is-active
+		i
+			+s(item-time-a)
 //detail
 .detail
 	position: relative
