@@ -99,9 +99,9 @@ textarea.form-control { resize: vertical; }
 .search-load__list span { color: #787878; }
 
 .social { float: right; margin-left: 25px; }
-.social a { float: left; margin-left: 7px; }
+.social a { float: left; margin-left: 7px; opacity: 0.6; }
 .social a:first-child { margin: 0; }
-.social a:hover { opacity: 0.7; }
+.social a.is-active { opacity: 1; }
 
 .social__fb { background: url('../img/icons-s44350819ad.png') 0 -1013px no-repeat; width: 28px; height: 28px; }
 
@@ -367,7 +367,9 @@ textarea.form-control { resize: vertical; }
 .comm__form-foot .checkbox input { margin: 2px 0 0 -20px; }
 .comm__form-foot .button { float: right; height: 17px; margin: 7px 0 0 50px; background: none; color: #0055cc; font-size: 12px; }
 .comm__form-foot .button span { display: inline-block; margin-left: 10px; vertical-align: middle; }
-.comm__form-foot .button:hover span { text-decoration: underline; color: #2a6496; }
+.comm__form-foot .button:hover span { text-decoration: underline; color: #2a6496; cursor: pointer; }
+.comm__form-foot .button.button_file { position: relative; }
+.comm__form-foot .button.button_file input[type="file"] { display: none; }
 
 .comm__list .btn-link { padding: 0; font-size: 12px; }
 .comm__list .comm__detail { min-height: 22px; }

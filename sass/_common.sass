@@ -172,11 +172,13 @@ textarea
 	a
 		float: left
 		margin-left: 7px
+		opacity: .6
 		&:first-child
 			margin: 0
-		&:hover
-			opacity: .7 
-.social__fb 
+		// &:hover
+		&.is-active
+			opacity: 1
+.social__fb
 	+s(fb)
 .social__tw
 	+s(tw)
