@@ -627,6 +627,8 @@ textarea.form-control { resize: vertical; }
 .login .control-label { margin-bottom: 15px; font-size: 16px; }
 .login .row .col-md-6 { border-left: 1px solid #e5e5e5; }
 .login .row .col-md-6:first-child { border: none; }
+.login .form-group .alert { display: none; }
+.login .form-group.has-error .alert { display: block; }
 .login .form-group .link { float: right; }
 
 .login__social button { position: relative; width: 100%; height: 44px; padding-left: 44px; margin-bottom: 20px; border-radius: 5px; text-align: left; color: white; overflow: visible; }

@@ -1110,7 +1110,12 @@
 			border-left: 1px solid $bc 
 			&:first-child
 				border: none 
-	.form-group 	
+	.form-group
+		.alert
+			display: none
+		&.has-error
+			.alert
+				display: block
 		.link
 			float: right
 .login__social

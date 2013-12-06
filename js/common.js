@@ -20,8 +20,18 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$('.comm__vote button').click(function() {
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		}
+		else {
+			$('.comm__vote button').removeClass('active');
+			$(this).addClass('active');
+		}
+	});
+
 	$('.js-file-btn').click(function() {
-		$(this).parent().find('.js-file-input').trigger('click');
+		$(this).parent().find('.js-file-input').click();
 	});
 
 	//filter
